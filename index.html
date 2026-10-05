@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Action Copilot | AI Seller Decision Support</title>
+  <meta name="description" content="Amazon Action Copilot helps Amazon sellers identify the most important issues and prioritize what deserves attention today.">
+  <style>
+    :root{
+      --bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#667085;
+      --blue:#2563eb;--blue-light:#eff6ff;--border:#e4e7ec;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit}
+    .nav{background:#fff;border-bottom:1px solid var(--border);padding:18px 24px}
+    .nav-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-size:20px;font-weight:700}.brand span{color:var(--blue)}
+    .links{display:flex;gap:20px;font-size:14px;color:var(--muted)}
+    .links a{text-decoration:none}.links a:hover{color:var(--blue)}
+    .hero{max-width:1100px;margin:0 auto;padding:90px 24px 70px;text-align:center}
+    .badge{display:inline-block;background:var(--blue-light);color:var(--blue);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:20px}
+    h1{font-size:52px;line-height:1.08;margin:0 auto 22px;max-width:850px;letter-spacing:-1.5px}
+    .hero p{font-size:19px;color:var(--muted);max-width:720px;margin:0 auto 30px}
+    .button{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:13px 22px;border-radius:8px;font-weight:700}
+    .section{max-width:1100px;margin:auto;padding:55px 24px}
+    .section h2{text-align:center;font-size:32px;margin:0 0 12px}
+    .section-intro{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 35px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:25px;box-shadow:0 2px 8px rgba(16,24,40,.03)}
+    .icon{width:40px;height:40px;border-radius:9px;background:var(--blue-light);color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:15px}
+    .card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:15px}
+    .workflow{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:35px}
+    .step{text-align:center;padding:20px}.number{font-size:14px;font-weight:700;color:var(--blue);margin-bottom:8px}
+    .step h3{margin:0 0 6px;font-size:17px}.step p{margin:0;color:var(--muted);font-size:14px}
+    .highlight{max-width:850px;margin:0 auto;background:var(--blue-light);border:1px solid #dbeafe;border-radius:16px;padding:32px;text-align:center}
+    .highlight h2{margin-top:0}.highlight p{color:var(--muted)}
+    footer{background:#172033;color:#d0d5dd;padding:30px 24px}
+    .footer-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
+    footer a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+    @media(max-width:800px){
+      h1{font-size:38px}.grid,.steps{grid-template-columns:1fr}.links{gap:10px}.links a:nth-child(3){display:none}
+      .footer-inner{flex-direction:column;text-align:center}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">Amazon <span>Action Copilot</span></div>
+    <div class="links">
+      <a href="privacy.html">Privacy</a>
+      <a href="data-handling.html">Data Handling</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="badge">AI-POWERED SELLER DECISION SUPPORT</div>
+  <h1>Know what needs your attention today.</h1>
+  <p>Amazon Action Copilot analyzes permitted Amazon seller business data and helps prioritize the issues and opportunities that deserve attention first.</p>
+  <a class="button" href="#how-it-works">See How It Works</a>
+</header>
+
+<section class="section" id="how-it-works">
+  <h2>From Amazon data to clear actions</h2>
+  <p class="section-intro">Instead of requiring sellers to review multiple reports and dashboards, Action Copilot is designed to surface the most important operational signals.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">01</div>
+      <h3>Connect</h3>
+      <p>Sellers authorize the application to access permitted Amazon business information through the Selling Partner API.</p>
+    </div>
+    <div class="card">
+      <div class="icon">02</div>
+      <h3>Analyze</h3>
+      <p>The application evaluates available data using defined business rules and AI-assisted analysis.</p>
+    </div>
+    <div class="card">
+      <div class="icon">03</div>
+      <h3>Prioritize</h3>
+      <p>Important signals are ranked using factors such as potential impact, urgency, evidence, and confidence.</p>
+    </div>
+  </div>
+</section>
+
+<section class="workflow">
+  <div class="section">
+    <h2>Built around one question</h2>
+    <p class="section-intro">What should I do today?</p>
+    <div class="steps">
+      <div class="step"><div class="number">01</div><h3>Detect</h3><p>Identify significant changes and operational risks.</p></div>
+      <div class="step"><div class="number">02</div><h3>Explain</h3><p>Show the evidence behind each identified issue.</p></div>
+      <div class="step"><div class="number">03</div><h3>Recommend</h3><p>Suggest a practical next step for seller review.</p></div>
+      <div class="step"><div class="number">04</div><h3>Decide</h3><p>Let the seller decide what action to take.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="highlight">
+    <h2>Advisory, not automatic</h2>
+    <p>Amazon Action Copilot is designed as a decision-support application. Recommendations require seller review. The application does not independently change product listings, prices, advertising settings, inventory settings, orders, or account configuration.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Currently in development</h2>
+  <p class="section-intro">Amazon Action Copilot is currently being developed and tested. Amazon-connected functionality will be provided only after the applicable authorization and integration requirements are completed.</p>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>© 2026 Amazon Action Copilot</div>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="data-handling.html">Data Handling</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
